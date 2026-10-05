@@ -1,0 +1,225 @@
+.ticket-edit-form {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background: #ffffff;
+    color: #111827;
+}
+
+/* CAMPOS */
+
+.ticket-modal-field {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.ticket-modal-field label,
+.ticket-modal-field > span {
+    display: block;
+
+    margin: 0;
+
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* INPUT / TEXTAREA / SELECT */
+
+.ticket-modal-field input,
+.ticket-modal-field textarea,
+.ticket-modal-field select {
+    display: block;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 11px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+    color: #111827;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    opacity: 1;
+}
+
+/* INPUT */
+
+.ticket-modal-field input {
+    height: 44px;
+}
+
+/* TEXTAREA */
+
+.ticket-modal-field textarea {
+    min-height: 120px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+.ticket-modal-field input::placeholder,
+.ticket-modal-field textarea::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+/* FOCO */
+
+.ticket-modal-field input:focus,
+.ticket-modal-field textarea:focus,
+.ticket-modal-field select:focus {
+    background: #ffffff;
+    color: #111827;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* SELECT */
+
+.ticket-modal-field select {
+    height: 44px;
+
+    cursor: pointer;
+
+    appearance: auto;
+}
+
+/* GRID */
+
+.ticket-modal-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+    background: #ffffff;
+}
+
+/* INFORMAÇÕES NÃO EDITÁVEIS */
+
+.ticket-modal-grid strong {
+    display: flex;
+    align-items: center;
+
+    min-height: 44px;
+
+    box-sizing: border-box;
+
+    padding: 0 12px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    background: #f9fafb;
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ERRO */
+
+.error-message {
+    display: block;
+
+    margin: 0;
+
+    color: #dc2626;
+
+    font-size: 12px;
+}
+
+/* BOTÕES */
+
+.modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding-top: 4px;
+
+    background: #ffffff;
+}
+
+.modal-actions button {
+    height: 42px;
+
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.modal-actions .btn-secondary {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+    color: #374151;
+}
+
+.modal-actions .btn-secondary:hover {
+    background: #f3f4f6;
+}
+
+.modal-actions .btn-primary {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.modal-actions .btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .modal-overlay {
+        padding: 12px;
+    }
+
+    .ticket-modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .modal-actions button {
+        width: 100%;
+    }
+}

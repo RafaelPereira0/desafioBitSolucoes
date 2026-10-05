@@ -25,7 +25,8 @@ class TicketService {
                     description: true,
                     user: {
                         select: {
-                            name: true
+                            name: true,
+                            id: true
                         }
                     },
                     category: {
@@ -33,7 +34,8 @@ class TicketService {
                             name: true
                         }
                     },
-                    status: true
+                    status: true,
+                    createdAt: true
                 }
             }
         )
@@ -83,7 +85,8 @@ class TicketService {
                     select: {
                         name: true
                     }
-                }
+                },
+                createdAt: true
             }
         })
 
