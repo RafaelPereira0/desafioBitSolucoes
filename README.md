@@ -221,20 +221,6 @@ No frontend, componentes reutilizáveis foram criados para elementos como modais
 
 Também foram utilizadas validações nos dados recebidos pela API para evitar informações inválidas.
 
-## 🔎 Melhorias futuras
-
-Algumas melhorias que poderiam ser implementadas em uma próxima versão:
-
-* Paginação dos chamados
-* Filtros por período e categoria
-* Ordenação dos chamados
-* Histórico de alterações dos chamados
-* Notificações em tempo real
-* Dashboard com gráficos
-* Testes automatizados
-* Docker para facilitar a configuração do ambiente
-* Controle de permissões mais detalhado
-* Melhorias de responsividade
 
 ## 🎯 Objetivo do projeto
 
