@@ -186,6 +186,31 @@
     background: #f8fafc;
 }
 
+.empty-tickets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #f9fafb; 
+    border: 1px dashed #e5e7eb; 
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+.loading-tickets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
 /* INFORMAÇÕES DO TICKET */
 
 .ticket-info {

@@ -92,9 +92,9 @@ export default function Dashboard() {
 
                 <div className="tickets-list">
                     {isLoading ? (
-                        <p>Carregando chamados...</p>
+                        <p className="loading-tickets">Carregando chamados...</p>
                     ) : tickets?.length === 0 ? (
-                        <p>Nenhum chamado encontrado.</p>
+                        <p className="empty-tickets">Nenhum chamado encontrado.</p>
                     ) : (
                         tickets?.slice(0, 3).map((ticket) => (
                             <div className="ticket-row" key={ticket.id}>
